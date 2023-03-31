@@ -7,6 +7,9 @@ import deved from '../public/dev-ed-wave.png'
 import TT from '../public/print/TT 1/TT Poster 2.png'
 import GitCamp from '../public/print/LEO/GitCamp/Comming Soon.png'
 import print from './print.js'
+import logo from './logo.js'
+import illus from './illus.js'
+import ui from './ui.js'
 import { useState } from "react";
 
 export default function Home() {
@@ -22,7 +25,7 @@ export default function Home() {
        
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-white">JNBT</h1>
+            <a href="#"> <h1 className="text-xl font-burtons dark:text-white">JNBT</h1> </a>
             <ul className="flex items-center">
               <li className="text-gray-800 text-2xl dark:text-white">
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} />
@@ -54,15 +57,11 @@ export default function Home() {
           <div className="text-center p-5">
             <h3 className="text-3xl py-1 dark:text-white  font-bold">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 mx-auto dark:text-gray-200">
-            As a creative design freelancer I can provide a wide range of services. Here are some of the services that I offer: <br/>
-            <span className="text-teal-600 dark:text-sky-500 text-lg">Graphic Design</span>: This includes creating designs for logos, business cards, brochures, posters, social media posts, and others. <br/>
-            <span className="text-teal-600 dark:text-sky-500 text-lg">UI design</span>: This includes designing interfaces for websites, apps, and other digital platforms. <br/>
-            <span className="text-teal-600 dark:text-sky-500 text-lg">Illustration</span>: This includes creating original illustrations for use in various media. <br/>
-            <span className="text-teal-600 dark:text-sky-500 text-lg">Print design</span>: This involves designing materials for print, such as books, magazines, packaging, and other materials.  <br/>
+            As a creative design freelancer I can provide a wide range of services. Here are some of the services that I offer: 
             </p>
           </div>
           <div className="lg:flex gap-10">
-          <a href="#logo">
+          <a href="logo">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 hover:bg-slate-100 dark:hover:bg-slate-800 ">
               
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Logo Design</h3>
@@ -73,7 +72,7 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-gray-200">Canva</p>
             </div>
             </a>
-            <a href="#ui">
+            <a href="ui">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 hover:bg-slate-100 dark:hover:bg-slate-800">
               
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">UI Design</h3>
@@ -84,7 +83,7 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-gray-200">MockFlow</p>
             </div>
             </a>
-            <a href="#illus">
+            <a href="illus">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 hover:bg-slate-100 dark:hover:bg-slate-800">
               
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Illustration</h3>

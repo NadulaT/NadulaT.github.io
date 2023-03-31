@@ -3,13 +3,7 @@ import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import Image from 'next/image'
 import index from './index.js'
-import GC_CS from '../public/print/LEO/GitCamp/Comming Soon.png'
-import GC_RN from '../public/print/LEO/GitCamp/Register Now.png'
-import GC_TY from '../public/print/LEO/GitCamp/Thank You.png'
-import GC_FH from '../public/print/LEO/GitCamp/Form Header.png'
-import GC_VB from '../public/print/LEO/GitCamp/Virtual BG.png'
-import TT1 from '../public/print/TT 1/TT Poster 2.png'
-import TT2 from '../public/print/TT 1/TT Poster.png'
+import GC_logo from '../public/print/LEO/GitCamp/Logo.png'
 
 import { useState } from "react";
 
@@ -45,7 +39,6 @@ export default function Home() {
         <h3 className="text-3xl py-2 pb-2 md:text-3xl text-teal-600">Projects</h3>
         <ul className="text-left">
           <li><a href="#gitcamp"><h3 className="text-lg font-medium pb-0 hover:text-teal-300 dark:text-white">Project GitCamp</h3></a></li>
-          <li><a href="#tt1"><h3 className="text-lg font-medium pb-0 hover:text-teal-300 dark:text-white">SLIIT Table Tennis</h3></a></li>
         </ul>
         </section>
 
@@ -54,41 +47,14 @@ export default function Home() {
         <h2 id="gitcamp" className="text-2xl pt-5 py-1 p-5 text-teal-600 text-center">Project GitCamp</h2>
         <p className="text-md py-5 leading-8 text-gray-800 md:text-xl  dark:text-gray-300">
               Project GitCamp was a virtual session held by the LEO club of SLIIT for IT Undergraduates of SLIIT<br/>
-              I designed the Flyers, Virtul Background and the Google Form Header for this project.
+              I designed the officil logo for this projet.
         </p>
         <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">  
           <div className="basis-1/3 flex-1">
-                  <Image src={GC_CS} alt={GC_CS} className="rounded-lg object-fit" layout="responsive"/>
-          </div>
-          <div className="basis-1/3 flex-1">
-                  <Image src={GC_RN} alt={GC_RN} className="rounded-lg object-fit"  layout="responsive"/>
-          </div>
-          <div className="basis-1/3 flex-1">
-                  <Image src={GC_FH} alt={GC_FH} className="rounded-lg object-fit"  layout="responsive"/>
-          </div>
-          <div className="basis-1/3 flex-1">
-                  <Image src={GC_VB} alt={GC_VB} className="rounded-lg object-fit"  layout="responsive"/>
-          </div>
-          <div className="basis-1/3 flex-1">
-                  <Image src={GC_TY} alt={GC_TY} className="rounded-lg object-fit"  layout="responsive"/>
+                  <Image src={GC_logo} alt={GC_logo} className="rounded-lg object-fit" layout="responsive"/>
           </div>
         </div> 
-        </div> 
-
-        <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-slate-100 dark:bg-slate-800">
-        <h2 id="tt1" className="text-2xl pt-5 py-1 p-5 text-teal-600 text-center">SLIIT Table Tennis</h2>
-        <p className="text-md py-5 leading-8 text-gray-800 md:text-xl  dark:text-gray-300">
-              I designded these posters for the Table Tennis club of SLIIT for thier recruitment program.
-        </p>
-        <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">  
-        <div className="basis-1/3 flex-1">
-                  <Image src={TT1} alt={TT1} className="rounded-lg object-fit"  layout="responsive"/>
-          </div>
-          <div className="basis-1/3 flex-1">
-                  <Image src={TT2} alt={TT2} className="rounded-lg object-fit"  layout="responsive"/>
-          </div>
-        </div>
-        </div>  
+        </div>   
         </section>
 
       </main>
