@@ -4,15 +4,9 @@ import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillInstagram, AiFillFacebook} from 'react-icons/ai'
 import Image from 'next/image'
 import deved from '../public/dev-ed-wave.png'
-import code from '../public/code.png'
-import design from '../public/design.png'
-import consulting from '../public/consulting.png'
-import web1 from '../public/web1.png'
-import web2 from '../public/web2.png'
-import web3 from '../public/web3.png'
-import web4 from '../public/web4.png'
-import web5 from '../public/web5.png'
-import web6 from '../public/web6.png'
+import TT from '../public/print/TT 1/TT Poster 2.png'
+import GitCamp from '../public/print/LEO/GitCamp/Comming Soon.png'
+import print from './print.js'
 import { useState } from "react";
 
 export default function Home() {
@@ -58,22 +52,22 @@ export default function Home() {
         
         <section>
           <div className="text-center p-5">
-            <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
+            <h3 className="text-3xl py-1 dark:text-white  font-bold">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 mx-auto dark:text-gray-200">
             As a creative design freelancer I can provide a wide range of services. Here are some of the services that I offer: <br/>
-            <span className="text-teal-600 dark:text-sky-500">Graphic Design</span>: This includes creating designs for logos, business cards, brochures, posters, social media posts, and others. <br/>
-            <span className="text-teal-600 dark:text-sky-500">UI design</span>: This includes designing interfaces for websites, apps, and other digital platforms. <br/>
-            <span className="text-teal-600 dark:text-sky-500">Illustration</span>: This includes creating original illustrations for use in various media. <br/>
-            <span className="text-teal-600 dark:text-sky-500">Print design</span>: This involves designing materials for print, such as books, magazines, packaging, and other materials.  <br/>
+            <span className="text-teal-600 dark:text-sky-500 text-lg">Graphic Design</span>: This includes creating designs for logos, business cards, brochures, posters, social media posts, and others. <br/>
+            <span className="text-teal-600 dark:text-sky-500 text-lg">UI design</span>: This includes designing interfaces for websites, apps, and other digital platforms. <br/>
+            <span className="text-teal-600 dark:text-sky-500 text-lg">Illustration</span>: This includes creating original illustrations for use in various media. <br/>
+            <span className="text-teal-600 dark:text-sky-500 text-lg">Print design</span>: This involves designing materials for print, such as books, magazines, packaging, and other materials.  <br/>
             </p>
           </div>
           <div className="lg:flex gap-10">
           <a href="#logo">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 hover:bg-slate-100 dark:hover:bg-slate-800 ">
-              <Image src={design} alt={design} width = {100} height={100}/>
+              
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Logo Design</h3>
-              <p className="py-2 dark:text-white">Creating <span className="text-teal-600 text-lg">elegant</span> logo designs suited for your business</p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
+              <p className="py-2 dark:text-white">Creating <span className="text-teal-600 text-lg dark:text-sky-500">elegant</span> logo designs suited for your business</p>
+              <h4 className="py-4 text-teal-600 dark:text-sky-500">Design tools I use</h4>
               <p className="text-gray-800 py-1 dark:text-gray-200">Adobe Photoshop</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Adobe Illustrator</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Canva</p>
@@ -81,10 +75,10 @@ export default function Home() {
             </a>
             <a href="#ui">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 hover:bg-slate-100 dark:hover:bg-slate-800">
-              <Image src={code} alt={design} width = {100} height={100}/>
+              
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">UI Design</h3>
-              <p className="py-2 dark:text-white">Creating <span className="text-teal-600 text-lg">simple, but stylish</span> UI designs suited for you</p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
+              <p className="py-2 dark:text-white">Creating <span className="text-teal-600 text-lg dark:text-sky-500">simple, but stylish</span> UI designs suited for you</p>
+              <h4 className="py-4 text-teal-600 dark:text-sky-500">Design tools I use</h4>
               <p className="text-gray-800 py-1 dark:text-gray-200">Figma</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Adobe XD</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">MockFlow</p>
@@ -92,78 +86,27 @@ export default function Home() {
             </a>
             <a href="#illus">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 hover:bg-slate-100 dark:hover:bg-slate-800">
-              <Image src={consulting} alt={design} width = {100} height={100}/>
+              
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Illustration</h3>
-              <p className="py-2 dark:text-white">Creating <span className="text-teal-600 text-lg">unique</span> illustrations suited for your need</p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
+              <p className="py-2 dark:text-white">Creating <span className="text-teal-600 text-lg dark:text-sky-500">unique</span> illustrations suited for your need</p>
+              <h4 className="py-4 text-teal-600 dark:text-sky-500">Design tools I use</h4>
               <p className="text-gray-800 py-1 dark:text-gray-200">Adobe Illustrator</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Adobe Photoshop</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Krita</p>
             </div>
             </a>
-            <a href="#print">
+            <a href="print">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 hover:bg-slate-100 dark:hover:bg-slate-800">
-              <Image src={consulting} alt={design} width = {100} height={100}/>
+              
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Print Design</h3>
-              <p className="py-2 dark:text-white">Creating <span className="text-teal-600 text-lg">eye-catching</span> print desings suited for your product</p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
+              <p className="py-2 dark:text-white">Creating <span className="text-teal-600 text-lg dark:text-sky-500">eye-catching</span> print desings suited for your product</p>
+              <h4 className="py-4 text-teal-600 dark:text-sky-500">Design tools I use</h4>
               <p className="text-gray-800 py-1 dark:text-gray-200">Adobe Photoshop</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Adobe Illustrator</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Canva</p>
             </div>
             </a>
           </div>
-        </section>
-
-        <section>
-          <div>
-            <h3 className="text-3xl py-1 p-5 dark:text-white text-center">My Portfolio</h3>
-          </div>
-
-            <h2 id="logo" className="text-2xl pt-5 py-1 p-5 text-teal-600 text-center">My Logo Desings</h2>
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                <div className="basis-1/3 flex-1">
-                  <Image src={web1} alt={web1} className="rounded-lg object-cover" width={100} height={100} layout="responsive"/>
-                </div>
-                <div className="basis-1/3 flex-1">
-                  <Image src={web2} alt={web2} className="rounded-lg object-cover" width={100} height={100} layout="responsive"/>
-                </div>
-                <a href="#" className="text-center shadow-lg p-10 m-auto rounded-xl hover:bg-slate-100 text-teal-600 hover:text-teal-900 text-xl">See More</a>
-            </div>
-            
-            <h2 id="ui" className="text-2xl pt-5 py-1 p-5 text-teal-600 text-center">My UI Desings</h2>
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                <div className="basis-1/3 flex-1">
-                  <Image src={web1} alt={web1} className="rounded-lg object-cover" width={100} height={100} layout="responsive"/>
-                </div>
-                <div className="basis-1/3 flex-1">
-                  <Image src={web2} alt={web2} className="rounded-lg object-cover" width={100} height={100} layout="responsive"/>
-                </div>
-                <a href="#" className="text-center shadow-lg p-10 m-auto rounded-xl hover:bg-slate-100 text-teal-600 hover:text-teal-900 text-xl">See More</a>
-            </div>
-
-            <h2 id="illus" className="text-2xl pt-5 py-1 p-5 text-teal-600 text-center">My Illustrations</h2>
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                <div className="basis-1/3 flex-1">
-                  <Image src={web1} alt={web1} className="rounded-lg object-cover" width={100} height={100} layout="responsive"/>
-                </div>
-                <div className="basis-1/3 flex-1">
-                  <Image src={web2} alt={web2} className="rounded-lg object-cover" width={100} height={100} layout="responsive"/>
-                </div>
-                <a href="#" className="text-center shadow-lg p-10 m-auto rounded-xl hover:bg-slate-100 text-teal-600 hover:text-teal-900 text-xl">See More</a>
-            </div>
-
-            <h2 id="print" className="text-2xl pt-5 py-1 p-5 text-teal-600 text-center">My Print Designs</h2>
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                <div className="basis-1/3 flex-1">
-                  <Image src={web1} alt={web1} className="rounded-lg object-cover" width={100} height={100} layout="responsive"/>
-                </div>
-                <div className="basis-1/3 flex-1">
-                  <Image src={web2} alt={web2} className="rounded-lg object-cover" width={100} height={100} layout="responsive"/>
-                </div>
-                <a href="#" className="text-center shadow-lg p-10 m-auto rounded-xl hover:bg-slate-100 text-teal-600 hover:text-teal-900 text-xl">See More</a>
-            </div>
-            
         </section>
 
       </main>
