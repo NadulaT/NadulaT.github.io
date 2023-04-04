@@ -4,6 +4,7 @@ import {BsFillMoonStarsFill} from 'react-icons/bs'
 import Image from 'next/image'
 import index from './index.js'
 import GC_logo from '../public/print/LEO/GitCamp/Logo.png'
+import RP_logo from '../public/logo/Reaserch Project/FOCUS BOT Logo.png'
 
 import { useState } from "react";
 
@@ -31,7 +32,7 @@ export default function Home() {
           </nav>
           <div className="text-center p-5">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-sky-500">Jayaswin Nadula</h2>
-            <h3 className="text-3xl py-2 md:text-3xl dark:text-white">Print Designs</h3>
+            <h3 className="text-3xl py-2 md:text-3xl dark:text-white">Logo Designs</h3>
           </div>
         </section>
         
@@ -39,6 +40,7 @@ export default function Home() {
         <h3 className="text-3xl py-2 pb-2 md:text-3xl text-teal-600">Projects</h3>
         <ul className="text-left">
           <li><a href="#gitcamp"><h3 className="text-lg font-medium pb-0 hover:text-teal-300 dark:text-white">Project GitCamp</h3></a></li>
+          <li><a href="#gitcamp"><h3 className="text-lg font-medium pb-0 hover:text-teal-300 dark:text-white">Research Project</h3></a></li>
         </ul>
         </section>
 
@@ -47,11 +49,22 @@ export default function Home() {
         <h2 id="gitcamp" className="text-2xl pt-5 py-1 p-5 text-teal-600 text-center">Project GitCamp</h2>
         <p className="text-md py-5 leading-8 text-gray-800 md:text-xl  dark:text-gray-300">
               Project GitCamp was a virtual session held by the LEO club of SLIIT for IT Undergraduates of SLIIT<br/>
-              I designed the officil logo for this projet.
+              I designed the official logo for this projet.
         </p>
         <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">  
           <div className="basis-1/3 flex-1">
                   <Image src={GC_logo} alt={GC_logo} className="rounded-lg object-fit" layout="responsive"/>
+          </div>
+        </div> 
+        </div> 
+        <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-slate-100 dark:bg-slate-800">
+        <h2 id="gitcamp" className="text-2xl pt-5 py-1 p-5 text-teal-600 text-center">Research Project</h2>
+        <p className="text-md py-5 leading-8 text-gray-800 md:text-xl  dark:text-gray-300">
+              This is a logo I designed for a 4th year research group of SLIIT.
+        </p>
+        <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">  
+          <div className="basis-1/3 flex-1">
+                  <Image src={RP_logo} alt={RP_logo} className="rounded-lg object-fit" layout="responsive"/>
           </div>
         </div> 
         </div>   

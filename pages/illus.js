@@ -31,7 +31,7 @@ export default function Home() {
           </nav>
           <div className="text-center p-5">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-sky-500">Jayaswin Nadula</h2>
-            <h3 className="text-3xl py-2 md:text-3xl dark:text-white">Print Designs</h3>
+            <h3 className="text-3xl py-2 md:text-3xl dark:text-white">Illustrations</h3>
           </div>
         </section>
         
